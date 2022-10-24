@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+  background: rgb(63,22,81);
+  background: linear-gradient(0deg, rgba(63,22,81,1) 14%, rgba(101,55,128,1) 50%, rgba(156,53,135,1) 87%);
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+
+.calculator {
+    position: relative;
+    height: auto;
+    width: auto;
+    padding: 20px;
+    padding-top: 5px;
+    border-radius: 10px;
+    border: solid white 3px;
+    box-shadow: 0 0 20px rgba(63,22,81,1)
+}
+
+
+
+
+#display {
+    margin: 0 10px;
+    height: 120px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    font-size: 40px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    border-radius: 13px;
+    color: white;
+  }
+
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+button#3, button#6, button#9 {
+    width: 60px;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#equal {
+    height: 60px;
+    width: 130px;
+}
+
+  .calculator {
+    background-color: #653780;
+  }
+
+  .calculator p {
+    color: white;
+    text-align: center;
+    margin-bottom:5px;
+}
+
+  .calculator #display {
+    color: white;
+  }
+
+  .calculator button#clear {
+    border-radius: 11px;
+    background: #ffffff;
+    color:  #e53f71; ;
+  }
+
+  .calculator button.btn-number {
+    border-radius: 11px;
+    background: #9c3587;
+    border: solid #e53f71 1px;
+    color: white;
+  }
+
+  .calculator button.btn-operator {
+    border-radius: 11px;
+    background: #e53f71;
+    color: white;
+  }
+  
+  .calculator button.btn-equal {
+    border-radius: 11px;
+    background-color: #e53f71;
+    color: #ffffff;
+  }
+  
+  
